@@ -18,7 +18,7 @@
 		$(document).ready(function(){
 			$('.abre-galeria').on('click', function(){
 				if($(this).hasClass('workon')){
-					$.post('contador.php', {pasta:'WorkOn'}, function(data){
+					$.post('https://hav00x.github.io/contador.php', {pasta:'WorkOn'}, function(data){
 						var imagens = data;
 						console.log(imagens);
 					});
