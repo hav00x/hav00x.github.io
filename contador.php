@@ -3,7 +3,13 @@
 $pasta = $_POST['pasta'];
 
 if($pasta == 'WorkOn'){
-	echo iterator_count(new DirectoryIterator('img/WorkOn'));
+	$directory = "img/WorkOn/";
+	$filecount = 0;
+	$files = glob($directory . "*");
+	if ($files){
+		$filecount = count($files);
+	}
+	echo $filecount;
 }
 
 
