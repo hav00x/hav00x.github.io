@@ -1,0 +1,154 @@
+@font-face {
+	font-family: "Univers 45 Light";
+	src: url("univers-45-light.otf");
+}
+
+h3, h4, h5, p, span{
+	font-family: "Univers 45 Light";
+}
+
+.container{
+	margin-bottom: 30px;
+}
+
+.div-foto-perfil{
+	padding: 10px;
+}
+
+.div-info-perfil{
+	height: 150px;
+	border-bottom: 1px solid #ececec;
+	border-right: 1px solid #ececec;
+	padding-top: 30px;
+	border-bottom-right-radius: 2px;
+	padding-left: 30px;
+	text-align: center;
+}
+
+.foto-perfil{
+	height: 130px;
+	width: 130px;
+	border-radius: 60px;
+	margin: 0 auto; 
+	padding: 4px; 
+	border: 1px solid #d4d4d4; 
+	background-color: #f5f5f5;
+}
+
+.foto-icones{
+	height: 20px;
+	width: 20px;
+	margin-bottom: 10px;
+}
+
+.nome{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.barra-lateral{
+	border-right: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.soc-media{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.format-tit{
+	font-size: 1.23em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+	display: inline-block;
+	border-bottom: 2px solid #00B6FF;
+}
+
+.margin-par{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.img-social{
+	padding-bottom: 20px;
+}
+
+.break-sm{
+	display: none;
+}
+
+.format-social{
+	margin-top: 30px;
+}
+
+.abre-galeria{
+	width: 100%;
+	border-top: none;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.modal-content{
+	background-color: #191919;
+	color: #e5e5e5;
+}
+
+.modal-header{
+	color: white;
+}
+
+#fechar-modal{
+	font-weight: 600;
+	color: #fff;
+	opacity: .7;
+	transition: all .7s;
+}
+
+#fechar-modal:hover{
+	opacity: 1;
+}
+
+.img-proj{
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.port-imgs{
+	margin-top: 30px;
+}
+
+@media (min-width: 300px) and (max-width: 991px){
+	.break-sm{
+		display: initial;
+	}
+
+	.barra-lateral{
+		border: none;
+	}
+
+	.div-info-perfil{
+		border: none;
+		height: auto;
+	}
+
+	.abre-galeria{
+		width: 100%;
+	}
+}
+
+@media (min-width: 700px) and (max-width: 991px){
+
+	*{
+		font-size: 1.1em !important;
+	}
+
+}

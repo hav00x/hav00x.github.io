@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CV Luiz Felipe</title>
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.abre-galeria').on('click', function(){
+				if($(this).hasClass('workon')){
+					$.post('contador.php', {pasta:'workon'}, function(data){
+						var imagens = data;
+						console.log(imagens);
+					});
+				} else{
+					return false;
+				}
+			});
+		});
+		
+
+	</script>
+
+</head>
+<body>
+	<div class="container">
+
+		<div id="galeria" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button id="fechar-modal" type="button" class="close" data-dismiss="modal">x</button>
+						<h4 class="modal-title">Galeria</h4>
+					</div>
+					<div class="modal-body" id="foto-foco">
+						
+					</div>
+					<div class="modal-footer" id="fotos-g">
+						
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 div-foto-perfil">
+				<img class="foto-perfil img-responsive" src="img/perfil.jpg">
+			</div>
+
+			<div class="col-md-9 div-info-perfil" style="text-align: center;">
+				
+				<h4 class="nome">Luiz Felipe Falchi Barreto</h4>
+
+				<img class="foto-icones" src="img/celular.png"> (11) 95648-6227 &nbsp; &nbsp; &nbsp;
+				<br class="break-sm">
+				<img class="foto-icones" src="img/email.png"> felipefalchibarreto@hotmail.com &nbsp; &nbsp; &nbsp;
+				<br class="break-sm">
+				<img class="foto-icones ultima-img" src="img/map.png"> SP / São Paulo
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 barra-lateral">
+				<h4 class="format-tit">Formação</h4>
+				<p>Faculdades Metropolitanas Unidas Unidade Brigadeiro</p>
+				<h5>Bacharel - Ciência da computação</h5><br>
+
+
+				<span class="ultimo-elemento"></span>
+
+				<h4 class="format-tit">Conhecimentos que possuo</h4>
+				<p>HTML/HTML5</p>
+				<p>Javascript</p>
+				<p>CSS/CSS3</p>
+				<p>PHP</p>
+				<p>Bootstrap 3</p>
+				<p>JQuery</p>
+				<p>Ajax</p>
+
+				<div class="soc-media">
+					<h4><strong>Me ache nessas redes:</strong></h4>
+					<div class="col-xs-4" style="text-align: center;">
+						<a href="https://www.facebook.com/luizfelipefalchi"><img class="img-responsive img-social" src="img/facebook.png"></a>
+					</div>
+					<div class="col-xs-4">
+						<a href="https://www.linkedin.com/in/luiz-felipe-falchi-barreto-3000aa157/"><img class="img-responsive img-social" src="img/linkedin.png"></a>
+					</div>
+					<div class="col-xs-4">
+						<a href="https://www.instagram.com/luizffb/"><img class="img-responsive img-social" src="img/instagram.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9" style="text-align: center;">
+				<h3 class="format-tit">Objetivo Profissional</h3>
+				<p class="margin-par">Meu objetivo principal como programador web é atuar na área de programação front-end, back-end ou full-stack. Durante o curso trabalhei como full-stack no meu TCC, fazendo grande parte do back-end com PHP, comunicando o banco de dados com a aplicação, fiz as funções para o site com JQuery, e no front-end fiz grande parte do visual básico com Bootstrap 3, refinando-o com CSS.</p>
+				<h3 class="format-tit">Resumo Profissional</h3>
+				<p class="margin-par">Trabalhei em um site por um ano, dando manutenção e administrando tudo o que ocorria no mesmo. Além disso, meu TCC foi um site de contratação de profissionais relacionado a tecnologia que tinha ênfase na comunicação com o cliente para uma melhor experiência de ambos lados, visto que muitas pessoas e companias ainda o fazem de um jeito sub-ótimo.</p>
+				<h3 class="format-tit">Portfólio</h3>
+				<p class="margin-par">Além desse site, esses são meus trabalhos até hoje:</p>
+
+				<div class="col-xs-4 port-imgs">
+					<img class="img-responsive img-proj" src="img/workon/workon1.png">
+					<button class="btn btn-default abre-galeria workon">WorkOn!</button>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
