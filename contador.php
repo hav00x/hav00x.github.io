@@ -2,7 +2,7 @@
 
 $pasta = $_POST['pasta'];
 
-if($pasta == 'workon'){
+if($pasta == 'WorkOn'){
 	echo iterator_count(new DirectoryIterator('img/WorkOn'));
 }
 
