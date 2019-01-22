@@ -16,25 +16,23 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+			var i = 0;
 			$('.abre-galeria').on('click', function(){
-				console.log('oi1');
+				
+				$('#foto-foco').contents().remove();
+				$('#fotos-g').contents().remove();
+
 				if($(this).hasClass('workon')){
-					$.ajax({
-						url: "https://hav00x.github.io/contador.php",
-						type: "POST",
-						data: {pasta:'WorkOn'},
-						success: function(data){
-							var imagens = data;
-						console.log(imagens);
-						}
-					});
-					
+					for(i = 1; i <= 5; i++){
+						$('#fotos-g').append('<div class="col-md-2 img-hold"><img class="img-responsive" src="img/WorkOn/workon'+i+'.png"></div>');
+						$('#galeria').modal('show');
+					}
 				} else{
 					return false;
 				}
 			});
 		});
-		
+
 
 	</script>
 
@@ -43,7 +41,7 @@
 	<div class="container">
 
 		<div id="galeria" class="modal fade" role="dialog">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 
 				<!-- Modal content-->
 				<div class="modal-content">
@@ -52,10 +50,12 @@
 						<h4 class="modal-title">Galeria</h4>
 					</div>
 					<div class="modal-body" id="foto-foco">
-						
+
 					</div>
-					<div class="modal-footer" id="fotos-g">
-						
+					<div class="modal-footer">
+						<div class="row" id="fotos-g">
+							
+						</div>
 					</div>
 				</div>
 
@@ -67,7 +67,7 @@
 			</div>
 
 			<div class="col-md-9 div-info-perfil" style="text-align: center;">
-				
+
 				<h4 class="nome">Luiz Felipe Falchi Barreto</h4>
 
 				<img class="foto-icones" src="img/celular.png"> (11) 95648-6227 &nbsp; &nbsp; &nbsp;
@@ -118,7 +118,7 @@
 				<h3 class="format-tit">Portfólio</h3>
 				<p class="margin-par">Além desse site, esses são meus trabalhos até hoje:</p>
 
-				<div class="col-xs-4 port-imgs">
+				<div class="col-md-4 col-xs-12 port-imgs">
 					<img class="img-responsive img-proj" src="img/WorkOn/workon1.png">
 					<button class="btn btn-default abre-galeria workon">WorkOn!</button>
 				</div>

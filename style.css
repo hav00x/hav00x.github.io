@@ -126,6 +126,10 @@ h3, h4, h5, p, span{
 	margin-top: 30px;
 }
 
+#fotos-g{
+	text-align: center;
+}
+
 @media (min-width: 300px) and (max-width: 991px){
 	.break-sm{
 		display: initial;
@@ -142,6 +146,14 @@ h3, h4, h5, p, span{
 
 	.abre-galeria{
 		width: 100%;
+	}
+
+	.modal-body{
+		display: none;
+	}
+
+	.img-hold{
+		margin: 30px 5px;
 	}
 }
 
