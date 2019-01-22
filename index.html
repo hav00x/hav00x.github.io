@@ -6,9 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cv Luiz Felipe</title>
 
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
-	<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
 	<script
 	src="https://code.jquery.com/jquery-2.2.4.js"
 	integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
@@ -16,24 +15,38 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			var i = 0;
 			$('.abre-galeria').on('click', function(){
 				
 				$('#foto-foco').contents().remove();
 				$('#fotos-g').contents().remove();
+				$('#foto-foco').append('<img src="img/WorkOn/workon1.png" id="expandedImg" style="width:100%">');
 
 				if($(this).hasClass('workon')){
 					for(i = 1; i <= 5; i++){
-						$('#fotos-g').append('<div class="col-md-2 img-hold"><img class="img-responsive" src="img/WorkOn/workon'+i+'.png"></div>');
+						if(i == 1){
+							$('#fotos-g').append('<div class="col-md-2 col-md-offset-1 img-hold"><img class="img-responsive img-click" src="img/WorkOn/workon'+i+'.png"></div>');
+						} else{
+							$('#fotos-g').append('<div class="col-md-2 img-hold"><img class="img-responsive img-click" src="img/WorkOn/workon'+i+'.png"></div>');
+						}
 						$('#galeria').modal('show');
+
 					}
 				} else{
 					return false;
 				}
 			});
+
+			$(document).on('click', '.img-click', function(){
+				if($('.modal-body').css('display') == 'none'){
+					return false;
+				} else{
+					var expandImg = document.getElementById("expandedImg");
+					expandImg.src = this.src;
+					expandImg.parentElement.style.display = "block";
+				}
+			});
+
 		});
-
-
 	</script>
 
 </head>
@@ -50,7 +63,7 @@
 						<h4 class="modal-title">Galeria</h4>
 					</div>
 					<div class="modal-body" id="foto-foco">
-
+						
 					</div>
 					<div class="modal-footer">
 						<div class="row" id="fotos-g">
@@ -129,7 +142,7 @@
 
 	</div>
 
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
