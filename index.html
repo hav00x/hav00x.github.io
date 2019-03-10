@@ -16,33 +16,47 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.abre-galeria').on('click', function(){
-				
+
 				$('#foto-foco').contents().remove();
 				$('#fotos-g').contents().remove();
 				$('#foto-foco').append('<img src="img/WorkOn/workon1.png" id="expandedImg" style="width:100%">');
 
 				if($(this).hasClass('workon')){
+
 					for(i = 1; i <= 5; i++){
 						if(i == 1){
+
 							$('#fotos-g').append('<div class="col-md-2 col-md-offset-1 img-hold"><img class="img-responsive img-click" src="img/WorkOn/workon'+i+'.png"></div>');
-						} else{
+
+						} else {
+
 							$('#fotos-g').append('<div class="col-md-2 img-hold"><img class="img-responsive img-click" src="img/WorkOn/workon'+i+'.png"></div>');
+
 						}
+
 						$('#galeria').modal('show');
 
 					}
-				} else{
+
+				} else {
+
 					return false;
+
 				}
 			});
 
 			$(document).on('click', '.img-click', function(){
-				if($('.modal-body').css('display') == 'none'){
+
+				if ($('.modal-body').css('display') == 'none'){
+
 					return false;
-				} else{
+
+				} else {
+
 					var expandImg = document.getElementById("expandedImg");
 					expandImg.src = this.src;
 					expandImg.parentElement.style.display = "block";
+
 				}
 			});
 
@@ -135,7 +149,7 @@
 				<p class="margin-par">Além desse site, esses são meus trabalhos até hoje:</p>
 
 				<div class="col-md-4 col-xs-12 port-imgs">
-					<img class="img-responsive img-proj" src="img/WorkOn/workon1.png">
+					<img class="img-responsive img-proj abre-galeria workon" src="img/WorkOn/workon1.png">
 					<button class="btn btn-default abre-galeria workon">WorkOn!</button>
 				</div>
 
