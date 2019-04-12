@@ -362,10 +362,10 @@ footer .img-responsive{
 		color: white;
 	}
 
-	.atendimento, .ajuda, .body-pag, .body-seg, .info-final{
+	.atendimento, .ajuda, .body-pag, .body-seg, .info-final, .social-align{
 		text-align: center;
 	}
-
+	
 	.atendimento ul, .ajuda ul{
 		padding-inline-start: 0;
 	}
