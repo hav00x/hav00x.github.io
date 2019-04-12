@@ -1,0 +1,376 @@
+footer{
+	background-color: #cccccc;
+	margin-top: 30px;
+}
+
+footer > .container{
+	padding-bottom: 80px;
+}
+
+footer .logo-cars{
+	margin-bottom: 70px;
+}
+
+p{
+	color: black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+header{
+	padding-top: 10px;
+}
+
+header, header p, .navbar-default{
+	background-color: #191919;
+	color: white;
+}
+
+.navbar-toggle{
+	float: none;
+	margin-right: 0;
+}
+
+header li{
+	font-weight: 600;
+}
+
+ul.navbar-nav a{
+	padding: 10px;
+}
+
+ul.navbar-nav a:hover{
+	color: #000;
+	transition: 1s all;
+}
+
+.pedidos{
+	margin-right: 15px;
+}
+
+.h-footer, .h-footer2{
+	color: #fff;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.clear-padding{
+	padding: 0;
+}
+
+.text-prod, .preco, .prod-venda, .banner, .logo-cars{
+	text-align: center;
+}
+
+.preco-antigo{
+	color: #A9A9A9;
+}
+
+.preco-novo{
+	color: red;
+}
+
+.text-prod{
+	margin: 40px auto 30px auto;
+}
+
+.head, .btn-comprar, .head-footer, .produtos, .social{
+	margin: 0 auto;
+}
+
+.informacoes{
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.btn-comprar{
+	background-color: transparent;
+	color: #32CD32;
+	border: 1px solid #32CD32;
+}
+
+.btn-comprar:hover{
+	transition: .8s all;
+}
+
+.head-footer, .head{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 35px;
+	color: black;
+	border-top: 1px solid #DCDCDC;
+	padding-top: 20px;
+}
+
+.head-footer{
+	margin-bottom: 40px;
+}
+
+.head, .head-pag, .head-seg{
+	margin-top: 25px;
+}
+
+.head-pag, .head-seg{
+	font-size: 18px;
+	text-align: center;
+}
+
+.body-pag, .body-seg{
+	margin-top: 30px;
+}
+
+.novidades{
+	margin-bottom: 60px;
+}
+
+.banner{
+	background-color: #323232;
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+
+.img-carrinho{
+	width: 28px;
+	height: 28px;
+}
+
+.img-cars{
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.banner > p{
+	line-height: 300px;
+	color: white;
+	font-size: 25px;
+}
+
+.form-email{
+	margin-bottom: 80px;
+}
+
+#email{
+	background-color: transparent;
+	border: 1px solid #323232;
+	border-top-width: 0;
+	border-right-width: 0;
+	border-left-width: 0;
+	padding-top: 18px;
+	display: block;
+	width: 100%;
+	color: #000;
+	border-radius: 1px;
+}
+
+#pesquisa{
+	background-color: transparent;
+	border: 1px solid white;
+	border-top-width: 0;
+	border-right-width: 0;
+	border-left-width: 0;
+}
+
+#email:hover{
+	transition: 1s all;
+}
+
+.envia-email{
+	display: block;
+	width: 100%;
+	background-color: #323232;
+	color: white;
+	border-radius: 3px;
+	height: 40px;
+}
+
+.btn-pesquisa, .btn-carrinho{
+	background-color: transparent;
+}
+
+.btn-pesquisa:hover, .btn-carrinho:hover, .navbar-toggle:hover{
+	transition: 1s all;
+}
+
+.btn-carrinho{
+	margin-left: 10px;
+	color: #ea6060;
+}
+
+.btn-carrinho:hover{
+	color: white;
+}
+
+.envia-email:hover{
+	background-color: #7f7f7f;
+	transition: 0.7s all;
+}
+
+.social{
+	height: 55px;
+	width: 55px;
+	border-radius: 20px;
+	background-color: white;
+	padding: 15px;
+}
+
+.div-front{
+	margin-bottom: 30px;
+}
+
+.div-mid{
+	margin-bottom: 15px;
+}
+
+.footer-cinza{
+	background-color: #191919;
+}
+
+.footer-cinza li{
+	text-decoration: none;
+}
+
+.footer-cinza a, header a, .informacoes a, .navbar-default .navbar-nav>li>a, footer span{
+	color: #fff;
+}
+
+.ajuda{
+	text-align: left;
+}
+
+.ajuda li, .atendimento li{
+	margin-bottom: 7px;
+}
+
+.atendimento{
+	text-align: right;
+	color: #fff;
+}
+
+.nobreak{
+	display: inline;
+}
+
+.navbar-toggle{
+	background-color: #191919;
+	text-align: center;
+}
+
+.formas-pagamento{
+	height: 35px;
+	width: 50px;
+}
+
+.formas-pagamento, .fotos-seguranca, .clearsale{
+	background-color: white;
+	border: 1px solid #b7b7b7;
+	padding: 0 3px;
+	border-radius: 4px;
+	margin-bottom: 6px;
+}
+
+.fotos-seguranca{
+	height: 75px;
+	width: 70px;
+}
+
+.clearsale{
+	height: 60px;
+	width: 100px;
+}
+
+.img-pad{
+	padding: 3px;
+}
+
+.info-final{
+	background-color: white;
+	padding-top: 10px;
+}
+
+.info{
+	color: #7f7f7f;
+	font-size: 10px;
+}
+
+footer .img-responsive{
+	display: inline-block;
+}
+
+.vtex{
+	height: 30px;
+	width: 70px;
+}
+
+@media (min-width: 992px){
+	.img-principal{
+		height: 600px;
+		width: 100%;
+	}
+
+	.img-meio{
+		height: 350px;
+		width: 100%;
+	}
+
+	.img-baixo{
+		height: 250px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 991px){
+	.img-principal, .img-meio, .img-baixo{
+		height: 400px;
+		width: 100%;
+	}
+
+	.btn-comprar{
+		margin-bottom: 20px;
+	}
+
+	.prod-venda{
+		margin: 0 auto;
+	}
+
+	.novidades{
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	#email{
+		margin-bottom: 20px;
+	}
+
+	.social{
+		height: 100px;
+		width: 100px;
+	}
+
+	.alinha-sm{
+		text-align: center;
+	}
+
+	header{
+		margin-bottom: 20px;
+	}
+
+	header a{
+		color: white;
+	}
+
+	.atendimento, .ajuda, .body-pag, .body-seg, .info-final{
+		text-align: center;
+	}
+
+	.atendimento ul, .ajuda ul{
+		padding-inline-start: 0;
+	}
+
+	.body-seg{
+		padding-bottom: 30px;
+	}
+}
