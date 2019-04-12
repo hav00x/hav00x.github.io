@@ -5,7 +5,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 
 	<link rel="stylesheet" type="text/css" href="css/stylePt2.css">
 
@@ -88,13 +88,15 @@
 						<a href="#" class="pedidos">Meus Pedidos</a>
 						<a href="#">Atendimento</a>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-12 pesq-carrinho">
 						<input id="pesquisa" type="text" name="pesquisa" placeholder="Estou procurando por...">
 						<button class="btn-pesquisa btn" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-						<button type="button" class="btn-carrinho btn">
-							<a href=""><img class="img-carrinho" src="img/testeParte2/shopping-cart.png"></a>
-						</button>
-						<span>(99) R$ 9,999.00</span>
+						<div class="div-pesq-comprar">
+							<button type="button" class="btn-carrinho btn">
+								<a href=""><img class="img-carrinho" src="img/testeParte2/shopping-cart.png"></a>
+							</button>
+							<span>(99) R$ 9,999.00</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -103,22 +105,22 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 div-front">
+			<div class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-12 div-front">
 				<img class="img-responsive img-principal" src="img/testeParte2/aston-martin-77.jpg">
 			</div>
-			<div class="col-md-6 div-mid">
+			<div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1 div-mid">
 				<img class="img-responsive img-meio" src="img/testeParte2/Chevrolet-Camaro-Z28-03.jpg">
 			</div>
-			<div class="col-md-6 div-mid">
+			<div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1 div-mid">
 				<img class="img-responsive img-meio" src="img/testeParte2/carro-mcLaren.jpg">
 			</div>
-			<div class="col-md-4 div-mid">
+			<div class="col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1 div-mid">
 				<img class="img-responsive img-baixo" src="img/testeParte2/jogo-rodas-chevrolet.jpg">
 			</div>
-			<div class="col-md-4 div-mid">
+			<div class="col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1 div-mid">
 				<img class="img-responsive img-baixo" src="img/testeParte2/jogo-rodas-audi.jpg">
 			</div>
-			<div class="col-md-4 div-mid">
+			<div class="col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1 div-mid">
 				<img class="img-responsive img-baixo" src="img/testeParte2/jogo-rodas-fiat.jpg">
 			</div>
 		</div>
@@ -127,7 +129,7 @@
 			<div class="col-md-12">
 				<h3 class="head"><strong>MAIS DESEJADOS</strong></h3>
 			</div>
-			<div class="col-md-3 prod-venda">
+			<div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-0 prod-venda">
 				<img class="img-responsive produtos" src="img/testeParte2/player-carro.png">
 				<p class="text-prod"><strong>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</strong></p>
 				<span class="preco-antigo"><strike>R$ 280,00</strike>  </span>
@@ -137,7 +139,7 @@
 					<span class="glyphicon glyphicon-shopping-cart"></span>  COMPRAR
 				</button>
 			</div>
-			<div class="col-md-3 prod-venda">
+			<div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-0 prod-venda">
 				<img class="img-responsive produtos" src="img/testeParte2/player-carro.png">
 				<p class="text-prod"><strong>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</strong></p>
 				<span class="preco-antigo"><strike>R$ 280,00</strike>  </span>
@@ -147,7 +149,7 @@
 					<span class="glyphicon glyphicon-shopping-cart"></span>  COMPRAR
 				</button>
 			</div>
-			<div class="col-md-3 prod-venda">
+			<div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-0 prod-venda">
 				<img class="img-responsive produtos" src="img/testeParte2/player-carro.png">
 				<p class="text-prod"><strong>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</strong></p>
 				<span class="preco-antigo"><strike>R$ 280,00</strike>  </span>
@@ -157,7 +159,7 @@
 					<span class="glyphicon glyphicon-shopping-cart"></span>  COMPRAR
 				</button>
 			</div>
-			<div class="col-md-3 prod-venda">
+			<div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-0 prod-venda">
 				<img class="img-responsive produtos" src="img/testeParte2/player-carro.png">
 				<p class="text-prod"><strong>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</strong></p>
 				<span class="preco-antigo"><strike>R$ 280,00</strike>  </span>
@@ -270,7 +272,7 @@
 				<div class="row">
 					<div class="col-md-5">
 						<p class="info">2013 - 2015 - Todos os direitos reservados. Razão Social Vestem - CNPJ 12.333.211/0001-44<br/>
-						Avenida Henry Ford, 1.716, Parque da Mooca, São Paulo - SP CEP:03109-000
+							Avenida Henry Ford, 1.716, Parque da Mooca, São Paulo - SP CEP:03109-000
 						</p>
 					</div>
 					<div class="col-md-2 col-md-offset-5">

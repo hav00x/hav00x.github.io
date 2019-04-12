@@ -60,7 +60,7 @@ ul.navbar-nav a:hover{
 	padding: 0;
 }
 
-.text-prod, .preco, .prod-venda, .banner, .logo-cars{
+.text-prod, .preco, .prod-venda, .banner, .logo-cars,.pesq-carrinho{
 	text-align: center;
 }
 
@@ -83,6 +83,10 @@ ul.navbar-nav a:hover{
 .informacoes{
 	text-align: right;
 	margin-bottom: 10px;
+}
+
+.div-pesq-comprar{
+	display: inline-block;
 }
 
 .btn-comprar{
@@ -196,8 +200,11 @@ ul.navbar-nav a:hover{
 }
 
 .btn-carrinho{
-	margin-left: 10px;
 	color: #ea6060;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .btn-carrinho:hover{
@@ -329,11 +336,7 @@ footer .img-responsive{
 	}
 
 	.btn-comprar{
-		margin-bottom: 20px;
-	}
-
-	.prod-venda{
-		margin: 0 auto;
+		margin-bottom: 40px;
 	}
 
 	.novidades{
@@ -365,12 +368,30 @@ footer .img-responsive{
 	.atendimento, .ajuda, .body-pag, .body-seg, .info-final, .social-align{
 		text-align: center;
 	}
-	
+
 	.atendimento ul, .ajuda ul{
 		padding-inline-start: 0;
 	}
 
 	.body-seg{
 		padding-bottom: 30px;
+	}
+
+	.container > .row > .col-xs-10 > .img-responsive{
+		height: 200px;
+	}
+
+	.head-footer, .head{
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.container > .row > .col-xs-10 > .img-responsive{
+		height: 400px;
+	}
+
+	.navbar-collapse.collapse {
+		display: inline-block !important;
 	}
 }
